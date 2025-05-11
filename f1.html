@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Assistant Pro</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f3ff;
+      padding: 20px;
+    }
+    .chat-box {
+      width: 600px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    #chatHistory {
+      height: 300px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #f9f9f9;
+      margin-bottom: 10px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #007acc;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="chat-box">
+  <h2>🤖 Health Assistant Pro</h2>
+  <div id="chatHistory">
+    🤖: Welcome! I'm your Health Assistant. Ask about any health condition for natural remedies.<br><br>
+  </div>
+  <input type="text" id="userInput" placeholder="Describe your symptoms..." style="width: 70%;">
+  <button onclick="getResponse()">Send</button>
+</div>
+
+<script>
+const remedies = {
+  "common cold": [
+    "Drink warm fluids like ginger tea or broth",
+    "Use steam inhalation with eucalyptus oil",
+    "Take vitamin C-rich foods such as oranges and bell peppers",
+    "Get adequate rest and sleep"
+  ],
+  "headache": [
+    "Apply a cold compress to the forehead",
+    "Practice relaxation techniques like deep breathing",
+    "Massage temples with peppermint oil",
+    "Stay hydrated by drinking enough water"
+  ],
+  "sore throat": [
+    "Gargle with warm salt water (1/2 tsp salt in 1 cup water)",
+    "Drink honey-lemon-warm water mixture",
+    "Suck on throat-soothing lozenges",
+    "Use a humidifier to moisten air"
+  ],
+  "indigestion": [
+    "Drink peppermint or ginger tea",
+    "Eat small portions of plain yogurt",
+    "Avoid lying down immediately after eating",
+    "Chew fennel seeds after meals"
+  ],
+  "sunburn": [
+    "Apply a cold milk compress using a clean cloth",
+    "Apply aloe vera gel several times daily",
+    "Stay hydrated with electrolyte-rich fluids",
+    "Take an oatmeal bath to soothe skin"
+  ],
+  "insomnia": [
+    "Drink chamomile or valerian root tea before bed",
+    "Practice 4-7-8 breathing technique",
+    "Maintain a cool, dark sleeping environment",
+    "Avoid screens 1 hour before bedtime"
+  ],
+  "toothache": [
+    "Rinse mouth with warm salt water",
+    "Apply clove oil to the affected area",
+    "Use a cold compress on the cheek near the pain",
+    "Elevate head while sleeping"
+  ],
+  "acne": [
+    "Apply tea tree oil diluted with coconut oil",
+    "Use honey and cinnamon face mask",
+    "Apply green tea extract with a cotton ball",
+    "Wash face twice daily with a mild cleanser"
+  ],
+  "constipation": [
+    "Drink warm water with lemon first thing in the morning",
+    "Eat fiber-rich fruits like papaya and prunes",
+    "Try abdominal massage in a clockwise motion",
+    "Drink prune juice or eat soaked figs"
+  ],
+  "muscle cramps": [
+    "Apply a warm compress to the affected area",
+    "Gently stretch and massage the muscle",
+    "Stay hydrated with electrolyte drinks",
+    "Ensure adequate magnesium intake (nuts, spinach)"
+  ]
+};
+
+
+function getResponse() {
+  const userInput = document.getElementById("userInput").value.toLowerCase();
+  const chat = document.getElementById("chatHistory");
+  chat.innerHTML += `👤: ${userInput}<br>`;
+
+  let found = false;
+  for (const disease in remedies) {
+    if (userInput.includes(disease) || userInput.includes(disease.split(" ")[1])) {
+      chat.innerHTML += `🤖: Natural remedies for ${disease}:<br>`;
+      remedies[disease].forEach((r, i) => chat.innerHTML += `${i + 1}. ${r}<br>`);
+      found = true;
+      break;
+    }
+  }
+
+  if (!found) {
+    chat.innerHTML += `🤖: I don't have remedies for "${userInput}".<br>Consult a healthcare professional for advice.<br>`;
+  }
+
+  chat.innerHTML += `<br>`;
+  document.getElementById("userInput").value = "";
+  chat.scrollTop = chat.scrollHeight;
+}
+</script>
+
+</body>
+</html>
