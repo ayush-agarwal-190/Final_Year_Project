@@ -1,0 +1,354 @@
+{
+  "hospitals": [
+    {
+      "name": "Sunshine Care Hospital",
+      "address": "90 Rajarhat Main Rd, Kolkata, West Bengal",
+      "pincode": "700072",
+      "contact": "033-1455-6827",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700072"
+    },
+    {
+      "name": "Lifeline Multispecialty",
+      "address": "89 MG Road, Kolkata, West Bengal",
+      "pincode": "700066",
+      "contact": "033-1669-9488",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700066"
+    },
+    {
+      "name": "Healing Touch Clinic",
+      "address": "123 Park Street, Kolkata, West Bengal",
+      "pincode": "700015",
+      "contact": "033-1731-4633",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700015"
+    },
+    {
+      "name": "GreenLeaf Hospital",
+      "address": "12 Bypass Avenue, Kolkata, West Bengal",
+      "pincode": "700074",
+      "contact": "033-1880-5373",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700074"
+    },
+    {
+      "name": "Hopewell Medical Center",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700083",
+      "contact": "033-1483-4251",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700083"
+    },
+    {
+      "name": "Serenity HealthCare",
+      "address": "23 Southern Avenue, Kolkata, West Bengal",
+      "pincode": "700074",
+      "contact": "033-1371-2463",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700074"
+    },
+    {
+      "name": "CureWell Hospital",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700060",
+      "contact": "033-1951-1196",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700060"
+    },
+    {
+      "name": "HealthFirst Hospital",
+      "address": "40 Garia Station Rd, Kolkata, West Bengal",
+      "pincode": "700026",
+      "contact": "033-1526-7562",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700026"
+    },
+    {
+      "name": "WellSpring Clinic",
+      "address": "56 Salt Lake Sector V, Kolkata, West Bengal",
+      "pincode": "700049",
+      "contact": "033-1798-7083",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700049"
+    },
+    {
+      "name": "VitalCare Hospital",
+      "address": "89 MG Road, Kolkata, West Bengal",
+      "pincode": "700082",
+      "contact": "033-1458-5826",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700082"
+    },
+    {
+      "name": "City Pulse Hospital",
+      "address": "27 Tollygunge Road, Kolkata, West Bengal",
+      "pincode": "700072",
+      "contact": "033-1449-1042",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700072"
+    },
+    {
+      "name": "HealthBridge Medical",
+      "address": "89 MG Road, Kolkata, West Bengal",
+      "pincode": "700069",
+      "contact": "033-1311-1070",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700069"
+    },
+    {
+      "name": "Silverline Hospital",
+      "address": "78 College Street, Kolkata, West Bengal",
+      "pincode": "700063",
+      "contact": "033-1152-9680",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700063"
+    },
+    {
+      "name": "SafeHands Medical",
+      "address": "56 Salt Lake Sector V, Kolkata, West Bengal",
+      "pincode": "700057",
+      "contact": "033-1746-4774",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700057"
+    },
+    {
+      "name": "NewLife Hospital",
+      "address": "40 Garia Station Rd, Kolkata, West Bengal",
+      "pincode": "700090",
+      "contact": "033-1280-7925",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700090"
+    },
+    {
+      "name": "BrightHope Health",
+      "address": "12 Bypass Avenue, Kolkata, West Bengal",
+      "pincode": "700056",
+      "contact": "033-1201-1241",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700056"
+    },
+    {
+      "name": "GoldenCare Hospital",
+      "address": "78 College Street, Kolkata, West Bengal",
+      "pincode": "700049",
+      "contact": "033-1689-7871",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700049"
+    },
+    {
+      "name": "SpringMed Hospital",
+      "address": "123 Park Street, Kolkata, West Bengal",
+      "pincode": "700059",
+      "contact": "033-1553-2457",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700059"
+    },
+    {
+      "name": "PulsePoint Medical",
+      "address": "90 Rajarhat Main Rd, Kolkata, West Bengal",
+      "pincode": "700065",
+      "contact": "033-1217-7799",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700065"
+    },
+    {
+      "name": "MetroCare Hospital",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700056",
+      "contact": "033-1478-5348",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700056"
+    },
+    {
+      "name": "Tranquil Health Center",
+      "address": "45 Vivekananda Road, Kolkata, West Bengal",
+      "pincode": "700049",
+      "contact": "033-1557-1794",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700049"
+    },
+    {
+      "name": "Unity General Hospital",
+      "address": "45 Vivekananda Road, Kolkata, West Bengal",
+      "pincode": "700031",
+      "contact": "033-1821-6610",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700031"
+    },
+    {
+      "name": "Harmony Hospital",
+      "address": "18 Behala Road, Kolkata, West Bengal",
+      "pincode": "700079",
+      "contact": "033-1261-1287",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700079"
+    },
+    {
+      "name": "ShantiNiketan Hospital",
+      "address": "56 Salt Lake Sector V, Kolkata, West Bengal",
+      "pincode": "700017",
+      "contact": "033-1693-9698",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700017"
+    },
+    {
+      "name": "Grace Hospital",
+      "address": "56 Salt Lake Sector V, Kolkata, West Bengal",
+      "pincode": "700073",
+      "contact": "033-1518-5032",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700073"
+    },
+    {
+      "name": "CareSure Hospital",
+      "address": "12 Bypass Avenue, Kolkata, West Bengal",
+      "pincode": "700018",
+      "contact": "033-1406-3730",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700018"
+    },
+    {
+      "name": "Healing Springs",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700094",
+      "contact": "033-1676-1258",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700094"
+    },
+    {
+      "name": "UrbanMed Clinic",
+      "address": "23 Southern Avenue, Kolkata, West Bengal",
+      "pincode": "700032",
+      "contact": "033-1600-5958",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700032"
+    },
+    {
+      "name": "Metroline Hospital",
+      "address": "64 Ballygunge Circular, Kolkata, West Bengal",
+      "pincode": "700047",
+      "contact": "033-1232-3821",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700047"
+    },
+    {
+      "name": "HopeCare Medical",
+      "address": "123 Park Street, Kolkata, West Bengal",
+      "pincode": "700080",
+      "contact": "033-1495-2231",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700080"
+    },
+    {
+      "name": "TrustPoint Hospital",
+      "address": "10 New Alipore Ave, Kolkata, West Bengal",
+      "pincode": "700049",
+      "contact": "033-1933-4609",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700049"
+    },
+    {
+      "name": "Nova Hospital",
+      "address": "23 Southern Avenue, Kolkata, West Bengal",
+      "pincode": "700043",
+      "contact": "033-1738-8595",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700043"
+    },
+    {
+      "name": "BlueCross Clinic",
+      "address": "123 Park Street, Kolkata, West Bengal",
+      "pincode": "700011",
+      "contact": "033-1217-4090",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700011"
+    },
+    {
+      "name": "Royal Hospital",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700078",
+      "contact": "033-1642-5214",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700078"
+    },
+    {
+      "name": "Sunrise Hospital",
+      "address": "45 Vivekananda Road, Kolkata, West Bengal",
+      "pincode": "700090",
+      "contact": "033-1832-8757",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700090"
+    },
+    {
+      "name": "FortuneCare",
+      "address": "10 New Alipore Ave, Kolkata, West Bengal",
+      "pincode": "700046",
+      "contact": "033-1977-7578",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700046"
+    },
+    {
+      "name": "CityHealth Clinic",
+      "address": "18 Behala Road, Kolkata, West Bengal",
+      "pincode": "700062",
+      "contact": "033-1365-9353",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700062"
+    },
+    {
+      "name": "HappyLife Hospital",
+      "address": "23 Southern Avenue, Kolkata, West Bengal",
+      "pincode": "700078",
+      "contact": "033-1525-2327",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700078"
+    },
+    {
+      "name": "EverGreen Hospital",
+      "address": "45 Vivekananda Road, Kolkata, West Bengal",
+      "pincode": "700063",
+      "contact": "033-1394-7874",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700063"
+    },
+    {
+      "name": "GoodHope Medical",
+      "address": "90 Rajarhat Main Rd, Kolkata, West Bengal",
+      "pincode": "700097",
+      "contact": "033-1710-4254",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700097"
+    },
+    {
+      "name": "PrimeCare Health",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700074",
+      "contact": "033-1368-6396",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700074"
+    },
+    {
+      "name": "Elite Hospital",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700061",
+      "contact": "033-1262-5772",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700061"
+    },
+    {
+      "name": "NextGen Hospital",
+      "address": "90 Rajarhat Main Rd, Kolkata, West Bengal",
+      "pincode": "700073",
+      "contact": "033-1457-6182",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700073"
+    },
+    {
+      "name": "CivicCare Clinic",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700027",
+      "contact": "033-1775-7862",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700027"
+    },
+    {
+      "name": "Oakwood Medical",
+      "address": "40 Garia Station Rd, Kolkata, West Bengal",
+      "pincode": "700039",
+      "contact": "033-1419-7803",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700039"
+    },
+    {
+      "name": "Pearl Hospital",
+      "address": "56 Salt Lake Sector V, Kolkata, West Bengal",
+      "pincode": "700058",
+      "contact": "033-1469-5079",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700058"
+    },
+    {
+      "name": "Medicare Center",
+      "address": "64 Ballygunge Circular, Kolkata, West Bengal",
+      "pincode": "700032",
+      "contact": "033-1966-2119",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700032"
+    },
+    {
+      "name": "Phoenix Hospital",
+      "address": "45 Vivekananda Road, Kolkata, West Bengal",
+      "pincode": "700026",
+      "contact": "033-1366-4819",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700026"
+    },
+    {
+      "name": "Rainbow Health",
+      "address": "89 MG Road, Kolkata, West Bengal",
+      "pincode": "700049",
+      "contact": "033-1993-6392",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700049"
+    },
+    {
+      "name": "Wellness Med Hospital",
+      "address": "33 EM Bypass, Kolkata, West Bengal",
+      "pincode": "700038",
+      "contact": "033-1103-2118",
+      "image": "https://source.unsplash.com/400x300/?hospital,clinic,healthcare,700038"
+    }
+  ]
+}
