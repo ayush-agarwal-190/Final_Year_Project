@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Health Assistant Pro</title>
   <style>
     body {
@@ -10,14 +12,19 @@
       padding: 20px;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
     }
 
     .chat-container {
-      width: 100%;
-      max-width: 800px;
+      width: 90%;
+      max-width: 600px;
       background: white;
       border-radius: 15px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
     }
 
     .chat-header {
@@ -27,8 +34,16 @@
       border-radius: 15px 15px 0 0;
     }
 
+    .bot-title {
+      margin: 0;
+      font-size: 1.5em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
     #chat-history {
-      height: 500px;
+      height: 400px;
       overflow-y: auto;
       padding: 20px;
       background: #f8f9fa;
@@ -96,14 +111,6 @@
     button:hover {
       background: #005fa3;
     }
-
-    .bot-title {
-      margin: 0;
-      font-size: 1.5em;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
   </style>
 </head>
 <body>
@@ -126,96 +133,137 @@
     </div>
   </div>
 
-  <script>
-  const naturalRemedies = {
-    headache: [
-      "Apply cold compress to forehead",
-      "Practice deep breathing exercises",
-      "Stay hydrated with water",
-      "Massage temples with peppermint oil"
-    ],
-    "sore throat": [
-      "Gargle with warm salt water",
-      "Drink honey-lemon tea",
-      "Use throat lozenges",
-      "Stay hydrated with warm fluids"
-    ],
-    insomnia: [
-      "Chamomile tea before bed",
-      "Maintain consistent sleep schedule",
-      "Create dark, cool environment",
-      "Avoid screens before bedtime"
-    ],
-    indigestion: [
-      "Drink ginger tea",
-      "Practice upright posture after meals",
-      "Try peppermint capsules",
-      "Avoid fatty/spicy foods"
-    ],
-    sunburn: [
-      "Cool compress with milk",
-      "Aloe vera gel application",
-      "Stay hydrated",
-      "Oatmeal bath soak"
-    ],
-    cold: [
-      "Steam inhalation",
-      "Vitamin C rich foods",
-      "Warm chicken soup",
-      "Adequate rest"
-    ]
-  };
+  <script>const naturalRemedies = {
+  headache: [
+    "Apply cold compress to forehead",
+    "Practice deep breathing exercises",
+    "Stay hydrated with water",
+    "Massage temples with peppermint oil"
+  ],
+  "sore throat": [
+    "Gargle with warm salt water",
+    "Drink honey-lemon tea",
+    "Use throat lozenges",
+    "Stay hydrated with warm fluids"
+  ],
+  insomnia: [
+    "Chamomile tea before bed",
+    "Maintain consistent sleep schedule",
+    "Create dark, cool environment",
+    "Avoid screens before bedtime"
+  ],
+  indigestion: [
+    "Drink ginger tea",
+    "Practice upright posture after meals",
+    "Try peppermint capsules",
+    "Avoid fatty/spicy foods"
+  ],
+  sunburn: [
+    "Cool compress with milk",
+    "Aloe vera gel application",
+    "Stay hydrated",
+    "Oatmeal bath soak"
+  ],
+  cold: [
+    "Steam inhalation",
+    "Vitamin C rich foods",
+    "Warm chicken soup",
+    "Adequate rest"
+  ],
+  cough: [
+    "Honey with warm water or tea",
+    "Ginger and tulsi (basil) tea",
+    "Turmeric milk before bed",
+    "Inhale steam with eucalyptus oil"
+  ],
+  constipation: [
+    "Drink warm lemon water in the morning",
+    "Increase fiber intake (fruits and vegetables)",
+    "Consume soaked prunes or raisins",
+    "Stay physically active"
+  ],
+  acne: [
+    "Apply tea tree oil (diluted)",
+    "Use aloe vera gel",
+    "Avoid oily and sugary foods",
+    "Wash face twice daily with a mild cleanser"
+  ],
+  anxiety: [
+    "Practice mindfulness meditation",
+    "Drink herbal teas like chamomile or lavender",
+    "Engage in physical activity",
+    "Try deep breathing or yoga"
+  ],
+  nausea: [
+    "Sip ginger tea or chew raw ginger",
+    "Smell peppermint oil",
+    "Eat dry crackers or toast",
+    "Stay in a cool, ventilated space"
+  ],
+  diarrhea: [
+    "Drink ORS (oral rehydration solution)",
+    "Eat plain boiled rice or banana",
+    "Avoid dairy and spicy food temporarily",
+    "Consume probiotics like yogurt"
+  ],
+  bloating: [
+    "Drink warm water with fennel seeds",
+    "Avoid carbonated drinks and chewing gum",
+    "Eat slowly and chew thoroughly",
+    "Try peppermint or ginger tea"
+  ]
+};
 
-  function handleSend() {
-    const inputField = document.getElementById('user-input');
-    const userMessage = inputField.value.trim();
-    if (!userMessage) return;
+    function handleSend() {
+      const inputField = document.getElementById('user-input');
+      const userMessage = inputField.value.trim();
+      if (!userMessage) return;
 
-    const chatHistory = document.getElementById('chat-history');
-    
-    // Add user message
-    const userContainer = document.createElement('div');
-    userContainer.className = 'message-container user-message';
-    userContainer.innerHTML = `
-      <div class="message-bubble user-bubble">
-        ${userMessage}
-      </div>
-    `;
-    chatHistory.appendChild(userContainer);
-
-    // Find matching remedy
-    let response = '';
-    const cleanInput = userMessage.toLowerCase();
-    const matchedCondition = Object.keys(naturalRemedies).find(condition => 
-      cleanInput.includes(condition)
-    );
-
-    if (matchedCondition) {
-      response = `
-        <strong>Natural remedies for ${matchedCondition}:</strong>
-        <ol>${naturalRemedies[matchedCondition]
-          .map(remedy => `<li>${remedy}</li>`)
-          .join('')}
-        </ol>
+      const chatHistory = document.getElementById('chat-history');
+      
+      // Add user message
+      const userContainer = document.createElement('div');
+      userContainer.className = 'message-container user-message';
+      userContainer.innerHTML = `
+        <div class="message-bubble user-bubble">
+          ${userMessage}
+        </div>
       `;
-    } else {
-      response = "For serious medical concerns, please consult a healthcare professional immediately. I can only provide general wellness suggestions.";
+      chatHistory.appendChild(userContainer);
+
+      // Find matching remedy
+      let response = '';
+      const cleanInput = userMessage.toLowerCase();
+      const matchedCondition = Object.keys(naturalRemedies).find(condition => 
+        cleanInput.includes(condition)
+      );
+
+      if (matchedCondition) {
+        response = `
+          <strong>Natural remedies for ${matchedCondition}:</strong>
+          <ol>${naturalRemedies[matchedCondition]
+            .map(remedy => `<li>${remedy}</li>`)
+            .join('')}
+          </ol>
+        `;
+      } else {
+        response = "For serious medical concerns, please consult a healthcare professional immediately. I can only provide general wellness suggestions.";
+      }
+
+      // Add bot response
+      const botContainer = document.createElement('div');
+      botContainer.className = 'message-container bot-message';
+      botContainer.innerHTML = `
+        <div class="message-bubble bot-bubble">
+          ${response}
+        </div>
+      `;
+      chatHistory.appendChild(botContainer);
+
+      // Clear input and scroll
+      inputField.value = '';
+      chatHistory.scrollTop = chatHistory.scrollHeight;
     }
-
-    // Add bot response
-    const botContainer = document.createElement('div');
-    botContainer.className = 'message-container bot-message';
-    botContainer.innerHTML = `
-      <div class="message-bubble bot-bubble">
-        ${response}
-      </div>
-    `;
-    chatHistory.appendChild(botContainer);
-
-    // Clear input and scroll
-    inputField.value = '';
-    chatHistory.scrollTop = chatHistory.scrollHeight;
-  }
   </script>
 </body>
 </html>
