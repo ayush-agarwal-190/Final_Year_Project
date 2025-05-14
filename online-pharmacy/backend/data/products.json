@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "name": "Paracetamol",
+    "use": "Relieves mild to moderate pain and reduces fever",
+    "side_effects": "nausea, rash, liver damage (in overdose)",
+    "description": "A widely used over-the-counter analgesic and antipyretic.",
+    "price": 66.92,
+    "image": "https://example.com/images/paracetamol.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Ibuprofen",
+    "use": "Treats pain, inflammation, and fever",
+    "side_effects": "stomach upset, dizziness, increased risk of bleeding",
+    "description": "A nonsteroidal anti-inflammatory drug (NSAID).",
+    "price": 90.19,
+    "image": "https://example.com/images/ibuprofen.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Amoxicillin",
+    "use": "Treats various bacterial infections",
+    "side_effects": "diarrhea, allergic reactions, nausea",
+    "description": "A penicillin-type antibiotic used against many bacterial infections.",
+    "price": 58.87,
+    "image": "https://example.com/images/amoxicillin.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Metformin",
+    "use": "Controls high blood sugar in type 2 diabetes",
+    "side_effects": "nausea, vomiting, diarrhea, metallic taste",
+    "description": "An oral diabetes medicine that helps control blood sugar levels.",
+    "price": 93.11,
+    "image": "https://example.com/images/metformin.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Amlodipine",
+    "use": "Treats high blood pressure and chest pain (angina)",
+    "side_effects": "swelling, fatigue, dizziness, flushing",
+    "description": "A calcium channel blocker that dilates blood vessels.",
+    "price": 46.24,
+    "image": "https://example.com/images/amlodipine.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Atorvastatin",
+    "use": "Lowers cholesterol and triglyceride levels",
+    "side_effects": "muscle pain, diarrhea, liver issues",
+    "description": "A statin used to prevent cardiovascular disease.",
+    "price": 10.58,
+    "image": "https://example.com/images/atorvastatin.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Omeprazole",
+    "use": "Treats acid reflux, ulcers, and GERD",
+    "side_effects": "headache, stomach pain, nausea",
+    "description": "A proton pump inhibitor that decreases stomach acid.",
+    "price": 53.73,
+    "image": "https://example.com/images/omeprazole.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Levothyroxine",
+    "use": "Treats hypothyroidism",
+    "side_effects": "weight loss, anxiety, sweating, palpitations",
+    "description": "A synthetic form of thyroid hormone.",
+    "price": 37.17,
+    "image": "https://example.com/images/levothyroxine.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Losartan",
+    "use": "Treats high blood pressure and protects kidneys in diabetes",
+    "side_effects": "dizziness, back pain, nasal congestion",
+    "description": "An angiotensin II receptor blocker (ARB).",
+    "price": 11.55,
+    "image": "https://example.com/images/losartan.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Salbutamol",
+    "use": "Relieves bronchospasm in asthma and COPD",
+    "side_effects": "tremor, headache, rapid heartbeat",
+    "description": "A bronchodilator that relaxes muscles in the airways.",
+    "price": 15.23,
+    "image": "https://example.com/images/salbutamol.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Cetirizine",
+    "use": "Relieves allergy symptoms like sneezing and runny nose",
+    "side_effects": "drowsiness, dry mouth, fatigue",
+    "description": "A second-generation antihistamine.",
+    "price": 77.0,
+    "image": "https://example.com/images/cetirizine.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Montelukast",
+    "use": "Prevents asthma and allergic rhinitis symptoms",
+    "side_effects": "headache, abdominal pain, mood changes",
+    "description": "A leukotriene receptor antagonist.",
+    "price": 13.11,
+    "image": "https://example.com/images/montelukast.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Clopidogrel",
+    "use": "Prevents blood clots after heart attack or stroke",
+    "side_effects": "bleeding, bruising, rash",
+    "description": "An antiplatelet medication.",
+    "price": 24.36,
+    "image": "https://example.com/images/clopidogrel.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Warfarin",
+    "use": "Prevents and treats blood clots",
+    "side_effects": "bleeding, purple toe syndrome, nausea",
+    "description": "An oral anticoagulant that inhibits vitamin K.",
+    "price": 26.11,
+    "image": "https://example.com/images/warfarin.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Prednisolone",
+    "use": "Reduces inflammation in conditions like asthma and arthritis",
+    "side_effects": "weight gain, mood swings, high blood pressure",
+    "description": "A corticosteroid drug.",
+    "price": 31.77,
+    "image": "https://example.com/images/prednisolone.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Doxycycline",
+    "use": "Treats bacterial infections including acne and respiratory infections",
+    "side_effects": "sun sensitivity, upset stomach, diarrhea",
+    "description": "A broad-spectrum tetracycline antibiotic.",
+    "price": 38.5,
+    "image": "https://example.com/images/doxycycline.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Tramadol",
+    "use": "Relieves moderate to severe pain",
+    "side_effects": "dizziness, constipation, nausea",
+    "description": "A synthetic opioid analgesic.",
+    "price": 17.35,
+    "image": "https://example.com/images/tramadol.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Fluoxetine",
+    "use": "Treats depression, OCD, and panic disorder",
+    "side_effects": "insomnia, nausea, anxiety",
+    "description": "A selective serotonin reuptake inhibitor (SSRI).",
+    "price": 84.05,
+    "image": "https://example.com/images/fluoxetine.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Insulin",
+    "use": "Controls blood sugar in diabetes",
+    "side_effects": "hypoglycemia, weight gain, injection site reactions",
+    "description": "A hormone therapy for diabetes.",
+    "price": 56.09,
+    "image": "https://example.com/images/insulin.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Furosemide",
+    "use": "Treats fluid retention and high blood pressure",
+    "side_effects": "dehydration, low potassium, dizziness",
+    "description": "A loop diuretic.",
+    "price": 17.53,
+    "image": "https://example.com/images/furosemide.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Naproxen",
+    "use": "Reduces inflammation and pain in arthritis, muscle aches",
+    "side_effects": "stomach pain, heartburn, nausea",
+    "description": "A nonsteroidal anti-inflammatory drug (NSAID).",
+    "price": 68.7,
+    "image": "https://example.com/images/naproxen.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Loratadine",
+    "use": "Treats seasonal allergies",
+    "side_effects": "headache, dry mouth, fatigue",
+    "description": "A non-drowsy antihistamine.",
+    "price": 24.96,
+    "image": "https://example.com/images/loratadine.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Propranolol",
+    "use": "Treats high blood pressure and anxiety",
+    "side_effects": "fatigue, cold hands, dizziness",
+    "description": "A beta-blocker.",
+    "price": 69.58,
+    "image": "https://example.com/images/propranolol.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Diazepam",
+    "use": "Treats anxiety, seizures, and muscle spasms",
+    "side_effects": "drowsiness, confusion, weakness",
+    "description": "A benzodiazepine tranquilizer.",
+    "price": 68.98,
+    "image": "https://example.com/images/diazepam.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Olanzapine",
+    "use": "Treats schizophrenia and bipolar disorder",
+    "side_effects": "weight gain, drowsiness, high cholesterol",
+    "description": "An atypical antipsychotic.",
+    "price": 58.39,
+    "image": "https://example.com/images/olanzapine.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Esomeprazole",
+    "use": "Treats GERD and stomach ulcers",
+    "side_effects": "abdominal pain, constipation, dry mouth",
+    "description": "A proton pump inhibitor.",
+    "price": 91.31,
+    "image": "https://example.com/images/esomeprazole.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Ranitidine",
+    "use": "Reduces stomach acid to treat ulcers and GERD",
+    "side_effects": "headache, diarrhea, constipation",
+    "description": "An H2 receptor blocker (Note: withdrawn in many countries).",
+    "price": 37.18,
+    "image": "https://example.com/images/ranitidine.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Duloxetine",
+    "use": "Treats depression and nerve pain",
+    "side_effects": "dry mouth, dizziness, sleepiness",
+    "description": "A serotonin-norepinephrine reuptake inhibitor (SNRI).",
+    "price": 39.77,
+    "image": "https://example.com/images/duloxetine.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Levofloxacin",
+    "use": "Treats bacterial infections including pneumonia and UTI",
+    "side_effects": "tendon rupture, nausea, insomnia",
+    "description": "A fluoroquinolone antibiotic.",
+    "price": 76.92,
+    "image": "https://example.com/images/levofloxacin.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Risperidone",
+    "use": "Treats schizophrenia and bipolar disorder",
+    "side_effects": "weight gain, drowsiness, anxiety",
+    "description": "An atypical antipsychotic medication.",
+    "price": 88.07,
+    "image": "https://example.com/images/risperidone.jpg"
+  }
+]
