@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BP Monitor - Graph</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Pressure Trend</h1>
+        <canvas id="bpChart" width="400" height="200"></canvas>
+        <a href="/" class="link-button">Add New Entry</a>
+    </div>
+
+    <script>
+        const data = {{ data|tojson }};
+        const labels = data.map(entry => entry.date);
+        const systolic = data.map(entry => entry.systolic);
+        const diastolic = data.map(entry => entry.diastolic);
+
+        const ctx = document.getElementById('bpChart').getContext('2d');
+        const bpChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [
+                    {
+                        label: 'Systolic',
+                        data: systolic,
+                        borderColor: '#e74c3c',
+                        backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Diastolic',
+                        data: diastolic,
+                        borderColor: '#3498db',
+                        backgroundColor: 'rgba(52, 152, 219, 0.1)',
+                        fill: true,
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    }
+                },
+                scales: {
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'mm Hg'
+                        },
+                        beginAtZero: false
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Date'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

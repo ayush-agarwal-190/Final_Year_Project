@@ -1,0 +1,42 @@
+[
+    {
+        "date": "2002-04-03",
+        "systolic": 231,
+        "diastolic": 122
+    },
+    {
+        "date": "2002-04-03",
+        "systolic": 33,
+        "diastolic": 44
+    },
+    {
+        "date": "2024-05-01",
+        "systolic": 120,
+        "diastolic": 80
+    },
+    {
+        "date": "2024-05-05",
+        "systolic": 125,
+        "diastolic": 85
+    },
+    {
+        "date": "2024-05-10",
+        "systolic": 135,
+        "diastolic": 88
+    },
+    {
+        "date": "2024-05-15",
+        "systolic": 140,
+        "diastolic": 90
+    },
+    {
+        "date": "2024-05-20",
+        "systolic": 130,
+        "diastolic": 82
+    },
+    {
+        "date": "2024-05-25",
+        "systolic": 128,
+        "diastolic": 84
+    }
+]

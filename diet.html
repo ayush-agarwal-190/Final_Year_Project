@@ -5,39 +5,98 @@
   <meta charset="UTF-8">
   <title>Diet Assistant</title>
   <style>
+    :root {
+      --primary: #4a6fa5;
+      --secondary: #166088;
+      --gradient: linear-gradient(135deg, #dce8f9, #425e88);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      /* background: linear-gradient(to right, #dce35b, #45b649); */
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
     }
 
     .container {
-      max-width: 500px;
-      margin: auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      animation: fadeIn 0.6s ease-out;
     }
 
-    input,
+    h2 {
+      margin-bottom: 20px;
+      /* color: #2e7d32; */
+      color: var(--secondary);
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #66bb6a;
+    }
+
     button {
       width: 100%;
-      padding: 10px;
-      margin-top: 10px;
+      padding: 12px;
       font-size: 16px;
+      /* background-color: #388e3c; */
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2e7d32;
     }
 
     #response {
       margin-top: 20px;
       padding: 15px;
       background: #e8f5e9;
-      border-left: 5px solid #4caf50;
+      border-left: 5px solid #66bb6a;
+      border-radius: 8px;
+      color: #2e7d32;
       display: none;
+      text-align: left;
     }
 
-    #userPrompt {
-      width: 475px;
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -45,9 +104,9 @@
 <body>
 
   <div class="container">
-    <h2>Diet Questions</h2>
+    <h2>🍎 Diet Assistant</h2>
     <input type="text" id="userPrompt" placeholder="Ask a diet question..." />
-    <button onclick="getAnswer()">Submit</button>
+    <button onclick="getAnswer()">Get Advice</button>
     <div id="response"></div>
   </div>
 
@@ -69,15 +128,16 @@
       const responseBox = document.getElementById("response");
 
       let found = false;
-      let answer = "Sorry, I couldn't find a specific answer. Please try asking differently.";
+      let answer = "❗ Sorry, I couldn't find a specific answer. Please try asking differently.";
 
       for (const keyword in responseObject) {
         if (prompt.includes(keyword)) {
-          answer = responseObject[keyword];
+          answer = "✅ " + responseObject[keyword];
           found = true;
           break;
         }
       }
+
 
       responseBox.innerText = answer;
       responseBox.style.display = "block";

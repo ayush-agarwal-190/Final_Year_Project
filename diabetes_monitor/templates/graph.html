@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sugar Monitor - Graph</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Sugar Trend</h1>
+        <canvas id="sugarChart" width="400" height="200"></canvas>
+        <a href="/" class="link-button">Add New Entry</a>
+    </div>
+
+    <script>
+        const data = {{ data|tojson }};
+        const labels = data.map(entry => entry.date);
+        const sugar = data.map(entry => entry.sugar);
+
+        const ctx = document.getElementById('sugarChart').getContext('2d');
+        const sugarChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Blood Sugar (mg/dL)',
+                    data: sugar,
+                    borderColor: '#e67e22',
+                    backgroundColor: 'rgba(230, 126, 34, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'top' }
+                },
+                scales: {
+                    y: {
+                        title: { display: true, text: 'mg/dL' },
+                        beginAtZero: false
+                    },
+                    x: {
+                        title: { display: true, text: 'Date' }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

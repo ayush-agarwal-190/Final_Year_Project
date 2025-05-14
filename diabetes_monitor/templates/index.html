@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Monitor - Add Entry</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Blood Sugar Tracker</h1>
+        <form method="post">
+            <label for="date">Date:</label>
+            <input type="date" name="date" required>
+
+            <label for="sugar">Sugar Level (mg/dL):</label>
+            <input type="number" name="sugar" required>
+
+            <button type="submit">Submit Reading</button>
+        </form>
+        <a href="/graph" class="link-button">View Sugar Graph</a>
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -136,8 +137,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .hero h1 {
@@ -538,8 +546,15 @@
 
         /* Animations */
         @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
         }
 
         .floating {
@@ -547,115 +562,121 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Header -->
-<header>
-    <nav class="navbar">
-        <div class="logo">
-            <i class="fas fa-robot"></i>
-            <span>MedAI</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li class="dropdown">
-                <a href="#features">Features</a>
-                <span class="arrow">&#9662;</span>
-<ul class="dropdown-menu">
-    <li><a href="f1.html">ChatBot</a></li>
-    <li><a href="http://127.0.0.1:5000/">H & M Portal</a></li>
-    <li><a href="http://localhost:3000/">Shop</a></li> 
-    <li><a href="diet.html">Diet</a></li>
-</ul>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <span>MedAI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#features">Features</a>
+                    <span class="arrow">&#9662;</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="f1.html">ChatBot</a></li>
+                        <li><a href="http://127.0.0.1:5000/">H & M Portal</a></li>
+                        <li><a href="http://localhost:3000/">Medicines</a></li>
+                        <li><a href="diet.html">Diet Assistant</a></li>
+                        <li><a href="http://127.0.0.1:5001">BP Tracker</a></li>
+                        <li><a href="http://127.0.0.1:5002">Diabetes Monitor</a></li>
+                        <li><a href="http://127.0.0.1:5003">Lab Test Dashboard</a></li>
+                    </ul>
 
-            </li>
-            <li><a href="#bmi">BMI Calculator</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="f2.html">Locate Hospital</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="mobile-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </nav>
-</header>
+                </li>
+                <li><a href="#bmi">BMI Calculator</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="f2.html">Locate Hospital</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-<style>
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 20px;
-    }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
 
-    .nav-links li {
-        position: relative;
-    }
+        .nav-links li {
+            position: relative;
+        }
 
-    .arrow {
-        cursor: pointer;
-        margin-left: 5px;
-        user-select: none;
-    }
+        .arrow {
+            cursor: pointer;
+            margin-left: 5px;
+            user-select: none;
+        }
 
-    .dropdown-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        flex-direction: column;
-        width: 150px;
-    }
+        .dropdown-menu {
+            font-size: small;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 2px;
+            margin: 0;
+            list-style: none;
+            flex-direction: column;
+            width: 150px;
+        }
 
-    .dropdown-menu li {
-        width: 100%;
-    }
+        .dropdown-menu li {
+            width: 80%;
+        }
 
-    .dropdown-menu li a {
-        display: block;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: #000;
-    }
+        .dropdown-menu li a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #000;
+        }
 
-    .dropdown-menu li:hover {
-        background-color: #f0f0f0;
-    }
+        .dropdown-menu li:hover {
+            background-color: #f0f0f0;
+        }
 
-    .dropdown.open .dropdown-menu {
-        display: flex;
-    }
-</style>
+        .dropdown.open .dropdown-menu {
+            display: flex;
+        }
+    </style>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const arrow = document.querySelector('.dropdown .arrow');
-        const dropdown = document.querySelector('.dropdown');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const arrow = document.querySelector('.dropdown .arrow');
+            const dropdown = document.querySelector('.dropdown');
 
-        arrow.addEventListener('click', function (e) {
-            e.stopPropagation();
-            dropdown.classList.toggle('open');
+            arrow.addEventListener('click', function (e) {
+                e.stopPropagation();
+                dropdown.classList.toggle('open');
+            });
+
+            document.addEventListener('click', function () {
+                dropdown.classList.remove('open');
+            });
         });
-
-        document.addEventListener('click', function () {
-            dropdown.classList.remove('open');
-        });
-    });
-</script>
+    </script>
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Revolutionizing Healthcare with AI</h1>
-            <p>MedAI combines cutting-edge artificial intelligence with medical expertise to deliver personalized, accessible, and efficient healthcare solutions for everyone.</p>
+            <p>MedAI combines cutting-edge artificial intelligence with medical expertise to deliver personalized,
+                accessible, and efficient healthcare solutions for everyone.</p>
             <div class="hero-buttons">
                 <a href="#bmi" class="btn">Try Our BMI Tool</a>
                 <a href="#features" class="btn btn-outline">Learn More</a>
@@ -675,14 +696,16 @@
                     <i class="fas fa-diagnoses"></i>
                 </div>
                 <h3>Diagnostic Assistance</h3>
-                <p>Our AI analyzes medical images and patient data to assist doctors in making faster, more accurate diagnoses.</p>
+                <p>Our AI analyzes medical images and patient data to assist doctors in making faster, more accurate
+                    diagnoses.</p>
             </div>
             <div class="feature-card floating" style="animation-delay: 0.2s;">
                 <div class="feature-icon">
                     <i class="fas fa-pills"></i>
                 </div>
                 <h3>Personalized Treatment</h3>
-                <p>Machine learning algorithms create customized treatment plans based on individual patient data and outcomes.</p>
+                <p>Machine learning algorithms create customized treatment plans based on individual patient data and
+                    outcomes.</p>
             </div>
             <div class="feature-card floating" style="animation-delay: 0.4s;">
                 <div class="feature-icon">
@@ -727,10 +750,12 @@
         <div class="testimonial-grid">
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p>The diagnostic assistance tool has reduced our error rate by 40% and significantly improved our workflow efficiency.</p>
+                    <p>The diagnostic assistance tool has reduced our error rate by 40% and significantly improved our
+                        workflow efficiency.</p>
                 </div>
                 <div class="testimonial-author">
-                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Dr. Sarah Johnson" class="author-img">
+                    <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Dr. Sarah Johnson"
+                        class="author-img">
                     <div class="author-info">
                         <h4>Dr. Sarah Johnson</h4>
                         <p>Chief Radiologist, City Hospital</p>
@@ -739,7 +764,8 @@
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p>As a diabetes patient, the predictive analytics helped catch potential complications months before they would have been noticeable.</p>
+                    <p>As a diabetes patient, the predictive analytics helped catch potential complications months
+                        before they would have been noticeable.</p>
                 </div>
                 <div class="testimonial-author">
                     <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Robert Chen" class="author-img">
@@ -751,10 +777,12 @@
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    <p>The personalized treatment recommendations have transformed how we approach chronic disease management in our practice.</p>
+                    <p>The personalized treatment recommendations have transformed how we approach chronic disease
+                        management in our practice.</p>
                 </div>
                 <div class="testimonial-author">
-                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Amina Patel" class="author-img">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Dr. Amina Patel"
+                        class="author-img">
                     <div class="author-info">
                         <h4>Dr. Amina Patel</h4>
                         <p>Family Physician</p>
@@ -768,7 +796,8 @@
     <section class="cta" id="contact">
         <div class="cta-content">
             <h2>Ready to Transform Your Healthcare Experience?</h2>
-            <p>Join thousands of healthcare providers and patients who are already benefiting from our AI-powered solutions. Get started today!</p>
+            <p>Join thousands of healthcare providers and patients who are already benefiting from our AI-powered
+                solutions. Get started today!</p>
             <a href="#" class="btn">Request Demo</a>
         </div>
     </section>
@@ -778,7 +807,8 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h3>MedAI</h3>
-                <p>Leading the AI revolution in healthcare with innovative, ethical, and effective solutions for better patient outcomes.</p>
+                <p>Leading the AI revolution in healthcare with innovative, ethical, and effective solutions for better
+                    patient outcomes.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -816,7 +846,8 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2023 MedAI. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>&copy; 2023 MedAI. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                    Service</a></p>
         </div>
     </footer>
 
@@ -827,26 +858,26 @@
 
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            mobileMenu.innerHTML = navLinks.classList.contains('active') ? 
+            mobileMenu.innerHTML = navLinks.classList.contains('active') ?
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
 
         // Smooth Scrolling for Anchor Links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                if(this.getAttribute('href') === '#') return;
-                
+
+                if (this.getAttribute('href') === '#') return;
+
                 const target = document.querySelector(this.getAttribute('href'));
-                if(target) {
+                if (target) {
                     window.scrollTo({
                         top: target.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
+
                     // Close mobile menu if open
-                    if(navLinks.classList.contains('active')) {
+                    if (navLinks.classList.contains('active')) {
                         navLinks.classList.remove('active');
                         mobileMenu.innerHTML = '<i class="fas fa-bars"></i>';
                     }
@@ -861,56 +892,56 @@
         const bmiCategory = document.getElementById('bmi-category');
         const bmiMessage = document.getElementById('bmi-message');
 
-        bmiForm.addEventListener('submit', function(e) {
+        bmiForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             const height = parseFloat(document.getElementById('height').value) / 100; // Convert cm to m
             const weight = parseFloat(document.getElementById('weight').value);
-            
-            if(height <= 0 || weight <= 0) {
+
+            if (height <= 0 || weight <= 0) {
                 alert('Please enter valid height and weight values');
                 return;
             }
-            
+
             const bmi = weight / (height * height);
             bmiValue.textContent = bmi.toFixed(1);
-            
+
             let category, message;
-            
-            if(bmi < 18.5) {
+
+            if (bmi < 18.5) {
                 category = 'Underweight';
                 message = 'You may need to gain some weight. Consult with a nutritionist for a healthy diet plan.';
-            } else if(bmi >= 18.5 && bmi < 25) {
+            } else if (bmi >= 18.5 && bmi < 25) {
                 category = 'Normal weight';
                 message = 'Great! You have a healthy weight. Maintain your current lifestyle.';
-            } else if(bmi >= 25 && bmi < 30) {
+            } else if (bmi >= 25 && bmi < 30) {
                 category = 'Overweight';
                 message = 'Consider some lifestyle changes to reach a healthier weight. Regular exercise can help.';
             } else {
                 category = 'Obese';
                 message = 'It would be beneficial to consult with a healthcare provider about weight management strategies.';
             }
-            
+
             bmiCategory.textContent = category;
             bmiMessage.textContent = message;
-            
+
             // Change color based on category
-            if(bmi < 18.5) {
+            if (bmi < 18.5) {
                 bmiOutput.style.backgroundColor = 'rgba(255, 193, 7, 0.2)';
                 bmiOutput.style.color = '#ff9800';
-            } else if(bmi >= 18.5 && bmi < 25) {
+            } else if (bmi >= 18.5 && bmi < 25) {
                 bmiOutput.style.backgroundColor = 'rgba(40, 167, 69, 0.2)';
                 bmiOutput.style.color = '#28a745';
-            } else if(bmi >= 25 && bmi < 30) {
+            } else if (bmi >= 25 && bmi < 30) {
                 bmiOutput.style.backgroundColor = 'rgba(255, 152, 0, 0.2)';
                 bmiOutput.style.color = '#ff9800';
             } else {
                 bmiOutput.style.backgroundColor = 'rgba(220, 53, 69, 0.2)';
                 bmiOutput.style.color = '#dc3545';
             }
-            
+
             bmiOutput.style.display = 'block';
-            
+
             // Scroll to results
             bmiOutput.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
@@ -918,12 +949,12 @@
         // Animation on scroll
         const animateOnScroll = () => {
             const elements = document.querySelectorAll('.feature-card, .testimonial-card');
-            
+
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.3;
-                
-                if(elementPosition < screenPosition) {
+
+                if (elementPosition < screenPosition) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
                 }
@@ -941,4 +972,5 @@
         window.addEventListener('load', animateOnScroll);
     </script>
 </body>
+
 </html>
