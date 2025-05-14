@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Diet Assistant</title>
@@ -9,20 +10,24 @@
       padding: 40px;
       background: #f2f2f2;
     }
+
     .container {
       max-width: 500px;
       margin: auto;
       background: white;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-    input, button {
+
+    input,
+    button {
       width: 100%;
       padding: 10px;
       margin-top: 10px;
       font-size: 16px;
     }
+
     #response {
       margin-top: 20px;
       padding: 15px;
@@ -32,51 +37,53 @@
     }
 
     #userPrompt {
-        width: 475px;
+      width: 475px;
     }
   </style>
 </head>
+
 <body>
 
-<div class="container">
-  <h2>Diet Questions</h2>
-  <input type="text" id="userPrompt" placeholder="Ask a diet question..." />
-  <button onclick="getAnswer()">Submit</button>
-  <div id="response"></div>
-</div>
+  <div class="container">
+    <h2>Diet Questions</h2>
+    <input type="text" id="userPrompt" placeholder="Ask a diet question..." />
+    <button onclick="getAnswer()">Submit</button>
+    <div id="response"></div>
+  </div>
 
-<script>
-  const responseObject = {
-    "thin": "You should try to increase your daily caloric intake by 200-300. Be sure to eat a balanced diet, and not go overboard with junk foods!",
-    "fat": "You should cut down on sugars, and starchy foods. Try to eat less processed and junk food with high fat content. Try to include more protein in your diet.",
-    "protein": "Proteins are essential for muscle repair and growth. Good sources include eggs, chicken, tofu, and lentils.",
-    "carbohydrate": "Carbohydrates provide energy. Choose complex carbs like whole grains, oats, and vegetables.",
-    "carb": "Carbohydrates provide energy. Choose complex carbs like whole grains, oats, and vegetables.",
-    "keto": "The keto diet is a low-carb, high-fat diet that can help with weight loss and insulin sensitivity.",
-    "vegetarian": "A vegetarian diet excludes meat but includes plant-based proteins, dairy, and eggs (if ovo-lacto).",
-    "water": "Drinking enough water (2-3 liters daily) supports digestion, metabolism, and overall health.",
-    "fiber": "Fiber aids digestion and keeps you full. Eat fruits, vegetables, legumes, and whole grains."
-  };
+  <script>
+    const responseObject = {
+      "thin": "You should try to increase your daily caloric intake by 200-300. Be sure to eat a balanced diet, and not go overboard with junk foods!",
+      "fat": "You should cut down on sugars, and starchy foods. Try to eat less processed and junk food with high fat content. Try to include more protein in your diet.",
+      "protein": "Proteins are essential for muscle repair and growth. Good sources include eggs, chicken, tofu, and lentils.",
+      "carbohydrate": "Carbohydrates provide energy. Choose complex carbs like whole grains, oats, and vegetables.",
+      "carb": "Carbohydrates provide energy. Choose complex carbs like whole grains, oats, and vegetables.",
+      "keto": "The keto diet is a low-carb, high-fat diet that can help with weight loss and insulin sensitivity.",
+      "vegetarian": "A vegetarian diet excludes meat but includes plant-based proteins, dairy.",
+      "water": "Drinking enough water (2-3 liters daily) supports digestion, metabolism, and overall health.",
+      "fiber": "Fiber aids digestion and keeps you full. Eat fruits, vegetables, legumes, and whole grains."
+    };
 
-  function getAnswer() {
-    const prompt = document.getElementById("userPrompt").value.toLowerCase();
-    const responseBox = document.getElementById("response");
-    
-    let found = false;
-    let answer = "Sorry, I couldn't find a specific answer. Please try asking differently.";
+    function getAnswer() {
+      const prompt = document.getElementById("userPrompt").value.toLowerCase();
+      const responseBox = document.getElementById("response");
 
-    for (const keyword in responseObject) {
-      if (prompt.includes(keyword)) {
-        answer = responseObject[keyword];
-        found = true;
-        break;
+      let found = false;
+      let answer = "Sorry, I couldn't find a specific answer. Please try asking differently.";
+
+      for (const keyword in responseObject) {
+        if (prompt.includes(keyword)) {
+          answer = responseObject[keyword];
+          found = true;
+          break;
+        }
       }
-    }
 
-    responseBox.innerText = answer;
-    responseBox.style.display = "block";
-  }
-</script>
+      responseBox.innerText = answer;
+      responseBox.style.display = "block";
+    }
+  </script>
 
 </body>
+
 </html>
